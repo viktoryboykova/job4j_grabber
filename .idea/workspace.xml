@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e4fbd47-ca7c-40e2-ab17-c5d9c38eb254" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/html/SqlRuParse.java" afterDir="false" />
+    <list default="true" id="8e4fbd47-ca7c-40e2-ab17-c5d9c38eb254" name="Changes" comment="Преобразование даты">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/html/DateTimeParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/html/SqlRuDateTimeParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/job4j/quartz/AlertRabbit$Rabbit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/job4j/quartz/AlertRabbit$Rabbit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/job4j/quartz/AlertRabbit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/job4j/quartz/AlertRabbit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/job4j/html/SqlRuParse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/html/SqlRuParse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +18,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -113,14 +112,22 @@
       <option name="project" value="LOCAL" />
       <updated>1638968204848</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Парсинг HTML страницы">
+      <created>1638978764211</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1638978764212</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ехническое задание. Агрегатор Java Вакансий" />
     <MESSAGE value="Quartz" />
     <MESSAGE value="Job c параметрами" />
-    <option name="LAST_COMMIT_MESSAGE" value="Job c параметрами" />
+    <MESSAGE value="Парсинг HTML страницы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Парсинг HTML страницы" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -23,7 +23,8 @@ public class SqlRuParse {
             if (date == null) {
                 continue;
             }
-            System.out.println(date.text());
+            SqlRuDateTimeParser sqlRuDateTimeParser = new SqlRuDateTimeParser();
+            System.out.println(sqlRuDateTimeParser.parse(date.text()));
         }
     }
 }
