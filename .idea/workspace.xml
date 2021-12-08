@@ -5,19 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e4fbd47-ca7c-40e2-ab17-c5d9c38eb254" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_c3p0_0_9_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_java7_2_4_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/quartz/AlertRabbit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/rabbit.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/job4j/quartz/AlertRabbit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/quartz/AlertRabbit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/rabbit.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rabbit.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/job4j/quartz/AlertRabbit$Rabbit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/job4j/quartz/AlertRabbit$Rabbit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/job4j/quartz/AlertRabbit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/job4j/quartz/AlertRabbit.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,12 +86,20 @@
       <option name="project" value="LOCAL" />
       <updated>1638955465946</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Quartz">
+      <created>1638961208744</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1638961208744</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ехническое задание. Агрегатор Java Вакансий" />
-    <option name="LAST_COMMIT_MESSAGE" value="ехническое задание. Агрегатор Java Вакансий" />
+    <MESSAGE value="Quartz" />
+    <option name="LAST_COMMIT_MESSAGE" value="Quartz" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
