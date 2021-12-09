@@ -17,9 +17,9 @@ public class SqlRuParse implements Parse {
     }
 
     public static void main(String[] args) throws Exception {
-      SqlRuDateTimeParser sqlRuDateTimeParser = new SqlRuDateTimeParser();
-      SqlRuParse sqlRuParse = new SqlRuParse(sqlRuDateTimeParser);
-      sqlRuParse.parseHtml();
+        SqlRuDateTimeParser sqlRuDateTimeParser = new SqlRuDateTimeParser();
+        SqlRuParse sqlRuParse = new SqlRuParse(sqlRuDateTimeParser);
+        sqlRuParse.parseHtml();
     }
 
     public void parseHtml() throws Exception {
