@@ -4,6 +4,10 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import ru.job4j.grabber.Parse;
+import ru.job4j.grabber.Post;
+import ru.job4j.grabber.utils.DateTimeParser;
+import ru.job4j.grabber.utils.SqlRuDateTimeParser;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,14 +61,12 @@ public class SqlRuParse implements Parse {
         Document doc = Jsoup.connect(link).get();
         Element msgTable = doc.select("table.msgTable").first();
         Elements row = msgTable.select("tr");
-        String description = row.get(1).select("td.msgBody").get(1).text();
-        String title = row.get(0).select("td.messageHeader").text();
         Element createdDate = row.last().selectFirst("td.msgFooter");
         String[] elements = createdDate.text().split(" \\[");
         String data = elements[0];
-        post.setTitle(title);
+        post.setTitle(row.get(0).select("td.messageHeader").text());
         post.setLink(link);
-        post.setDescription(description);
+        post.setDescription(row.get(1).select("td.msgBody").get(1).text());
         post.setCreated(dateTimeParser.parse(data));
         return post;
     }
