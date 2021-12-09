@@ -37,7 +37,8 @@ public class SqlRuDateTimeParser implements DateTimeParser {
             String month = words[1];
             parse = parse.replace(month, MONTHS.get(month));
         }
-
-        return LocalDateTime.parse(parse, formatter2);
+        LocalDateTime data = LocalDateTime.parse(parse, formatter2);
+        System.out.println(data);
+        return data;
     }
 }
