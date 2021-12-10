@@ -24,7 +24,7 @@ public class AlertRabbit {
     }
 
     public static void main(String[] args) {
-        try(InputStream in = AlertRabbit.class.getClassLoader().getResourceAsStream("rabbit.properties")) {
+        try (InputStream in = AlertRabbit.class.getClassLoader().getResourceAsStream("rabbit.properties")) {
             Properties properties = new Properties();
             properties.load(in);
             AlertRabbit alertRabbit = new AlertRabbit(properties);
