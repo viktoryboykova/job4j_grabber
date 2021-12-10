@@ -11,6 +11,10 @@ public class Post {
     private String description;
     private LocalDateTime created;
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getTitle() {
         return title;
     }
