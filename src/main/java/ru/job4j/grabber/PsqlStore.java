@@ -1,5 +1,8 @@
 package ru.job4j.grabber;
 
+import org.postgresql.util.PSQLException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import ru.job4j.grabber.utils.DateTimeParser;
 import ru.job4j.grabber.utils.SqlRuDateTimeParser;
 import ru.job4j.html.SqlRuParse;
@@ -14,6 +17,7 @@ import java.util.List;
 import java.util.Properties;
 
 public class PsqlStore implements Store, AutoCloseable {
+    private static final Logger LOG = LoggerFactory.getLogger(PsqlStore.class.getName());
 
     private Connection connection;
 
@@ -44,8 +48,8 @@ public class PsqlStore implements Store, AutoCloseable {
                     post.setId(generatedKeys.getInt(1));
                 }
             }
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        } catch (SQLException e) {
+            LOG.error("", e);
         }
     }
 
@@ -96,23 +100,5 @@ public class PsqlStore implements Store, AutoCloseable {
         if (connection != null) {
             connection.close();
         }
-    }
-
-    public static void main(String[] args) throws Exception {
-       try (InputStream in = PsqlStore.class.getClassLoader().getResourceAsStream("app.properties")) {
-           Properties properties = new Properties();
-           properties.load(in);
-           PsqlStore psqlStore = new PsqlStore(properties);
-           SqlRuDateTimeParser sqlRuDateTimeParser = new SqlRuDateTimeParser();
-           SqlRuParse sqlRuParse = new SqlRuParse(sqlRuDateTimeParser);
-           List<Post> list = sqlRuParse.list("https://www.sql.ru/forum/job-offers");
-           psqlStore.save(list.get(0));
-           psqlStore.save(list.get(1));
-           List<Post> fromDatabase = psqlStore.getAll();
-           for (Post post : fromDatabase) {
-               System.out.println(post);
-               System.out.println(psqlStore.findById(2));
-           }
-       }
     }
 }

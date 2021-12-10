@@ -20,21 +20,6 @@ public class SqlRuParse implements Parse {
         this.dateTimeParser = dateTimeParser;
     }
 
-    public static void main(String[] args) throws Exception {
-        SqlRuDateTimeParser sqlRuDateTimeParser = new SqlRuDateTimeParser();
-        SqlRuParse sqlRuParse = new SqlRuParse(sqlRuDateTimeParser);
-        sqlRuParse.parseHtml();
-    }
-
-    public void parseHtml() throws Exception {
-        for (int i = 1; i <= 5; i++) {
-            List<Post> posts = list(String.format("https://www.sql.ru/forum/job-offers/%s", i));
-            for (Post post : posts) {
-                System.out.println(post + "\n");
-            }
-        }
-    }
-
     @Override
     public List<Post> list(String link) throws Exception {
         List<Post> posts = new ArrayList<>();
